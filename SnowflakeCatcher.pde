@@ -24,10 +24,16 @@ void draw()
 }
 void mouseDragged()
 {
-  noStroke();
+
+  if (mouseButton == RIGHT){
+    noStroke();
+    fill(0,0,0);
+    ellipse(mouseX,mouseY,20,20);
+  }else{  
+    noStroke();
   fill(255,0,0);
   ellipse(mouseX,mouseY,10,10);
-  
+  }
 }
 
 class Snowflake
