@@ -49,7 +49,7 @@ class Snowflake
   }
   void lookDown()
   {
-   if(get(x,y+size) == color(255,0,0)){
+   if(get(x,y+(size/2)+1) == color(255,0,0)){
      t = false;
   }else{
      t = true;
@@ -59,7 +59,7 @@ class Snowflake
   {
    stroke(0);
      fill(0);
-    ellipse(x,y,size+5,size+5);
+    ellipse(x,y-2,size,size-1);
   }
   void move()
   {
